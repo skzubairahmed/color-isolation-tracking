@@ -23,7 +23,7 @@ while True:
     cv2.imshow("Mask", mask)
     cv2.imshow("Isolation result", result)
 
-    if cv2.waitKey(1) and 0xFF == 27:
+    if cv2.waitKey(1) & 0xFF == 27:
         break
 
 cv2.destroyAllWindows();
